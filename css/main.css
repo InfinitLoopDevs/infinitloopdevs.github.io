@@ -3,13 +3,13 @@ body {
     width: 90%;
     margin: auto;
     background-color: white;
-    max-height: 100vh;
 }
 
 header {
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .logo a,
@@ -28,12 +28,21 @@ header .logo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.logo span {
-    border: 1px solid black;
+.logo #right {
+    border: 2px solid black;
     color: white;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding-bottom: 2px;
     background-color: black;
+}
+
+.logo #left {
+    border: 2px solid black;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-bottom: 2px;
 }
 
 nav {
@@ -46,26 +55,45 @@ nav ul {
     justify-content: flex-end;
 }
 
+nav ul span {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(70, 70, 70);
+}
+
 nav li {
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
     color: rgb(173, 173, 173);
     letter-spacing: 2px;
-    padding-left: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    transition: 1s ease-in;
+    transition: 0.3s ease-in;
 }
 
 nav li:hover {
-    color: rgb(124, 124, 124);
+    color: white;
+    background-color: rgb(87, 87, 87);
+    padding: 5px;
+    border-radius: 5px;
 }
 
+#banner span {
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 5px 28px 5px 28px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgb(119, 119, 119);
+}
+
+/* section, the default height is 100vh; with overflow hidden, when it is not hidden the height is auto */
 section {
-    /* max-height: 100vh; */
+    height: 100vh;
     width: 90%;
     margin: auto;
-    /* overflow: hidden; */
 }
 
 section h1 {
@@ -80,6 +108,18 @@ section h1 {
     flex: 2;
 }
 
+/* Hidden ^ not hidden: overflow */
+#letter {
+    height: 110px;
+    overflow: hidden;
+}
+
+#letter::selection {
+    color: rgb(199, 199, 199);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.1;
+}
+
 #background_banner {
     flex: 1;
 }
@@ -87,10 +127,28 @@ section h1 {
 footer {
     display: flex;
     justify-content: space-between;
-    height: 25vh;
-    align-items: center;
+    height: 20vh;
+}
+
+#see_more {
+    background-color: rgb(189, 0, 0);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: fit-content;
+    display: block;
+    width: fit-content;
+    opacity: 0.8;
+    transition: 0.3s ease-in;
+}
+
+#see_more:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 1px 1px 10px rgb(119, 119, 119);
 }
 
 #copy_right {
     font-style: oblique;
+    align-self: center;
 }
