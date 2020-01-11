@@ -94,7 +94,7 @@ nav li {
 nav li:hover {
     color: rgb(14, 14, 14);
     background-color: rgb(255, 255, 255);
-    padding: 5px;
+    padding: 0px 5px 0px 5px;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -137,7 +137,7 @@ section h1 {
 /* Hidden ^ not hidden: overflow */
 /* #letter {
     height: 110px;
-     overflow: hidden;
+    overflow: hidden;
 } */
 
 .read-more-content {
@@ -155,7 +155,9 @@ section h1 {
     background-image: url("../img/vp_infinity-symbol_1000x570.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
+    /* transform: rotate(60deg); */
     background-size: contain;
+    /* margin-top: -100px; */
     height: 80vh;
 }
 
@@ -207,4 +209,12 @@ hr {
 
 #copy_right {
     align-self: center;
+}
+
+#current {
+    color: rgb(14, 14, 14);
+    background-color: rgb(255, 255, 255);
+    padding: 0px 5px 0px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
