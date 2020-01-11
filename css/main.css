@@ -30,12 +30,26 @@ header .logo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.logo sub {
+    text-shadow: 1px 1px 5px black;
+}
+
+.logo #bottom {
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
 .logo .right {
     border: 2px solid black;
     color: white;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
     box-shadow: 1px 1px 5px black;
     background-color: black;
 }
@@ -47,6 +61,8 @@ header .logo {
     border-top-left-radius: 5px;
     box-shadow: 1px 1px 5px black;
     padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 nav {
@@ -142,7 +158,12 @@ section h1 {
 footer {
     display: flex;
     justify-content: space-between;
-    height: 20vh;
+    height: 12vh;
+}
+
+footer .logo {
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 hr {
@@ -151,7 +172,9 @@ hr {
 
 #see_more,
 #see_less {
-    background-color: rgb(189, 0, 0);
+    background-color: rgb(0, 0, 151);
+    color: white;
+    font-weight: bolder;
     padding: 5px;
     margin-top: 10px;
     border-radius: 5px;
