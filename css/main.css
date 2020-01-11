@@ -111,6 +111,7 @@ section h1 {
 
 #letter_section {
     flex: 2;
+    margin-right: 20px;
 }
 
 /* Hidden ^ not hidden: overflow */
@@ -131,6 +132,11 @@ section h1 {
 
 #background_banner {
     flex: 1;
+    background-image: url("../img/vp_infinity-symbol_1000x570.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    height: 80vh;
 }
 
 footer {
