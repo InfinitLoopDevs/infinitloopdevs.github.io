@@ -35,8 +35,8 @@ header .logo {
 }
 
 .logo #bottom {
-    font-weight: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 20px;
     display: inline-block;
     margin-left: 5px;
@@ -119,6 +119,8 @@ section {
 
 section h1 {
     color: grey;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 #main_section {
@@ -126,8 +128,10 @@ section h1 {
 }
 
 #letter_section {
+    margin-bottom: 30px;
     flex: 2;
     margin-right: 20px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 /* Hidden ^ not hidden: overflow */
@@ -158,6 +162,7 @@ section h1 {
 footer {
     display: flex;
     justify-content: space-between;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     height: 12vh;
 }
 
@@ -172,7 +177,7 @@ hr {
 
 #see_more,
 #see_less {
-    background-color: rgb(0, 0, 151);
+    background-color: #1074e7;
     color: white;
     font-weight: bolder;
     padding: 5px;
@@ -181,7 +186,6 @@ hr {
     height: fit-content;
     display: block;
     width: fit-content;
-    opacity: 0.7;
     transition: 0.3s ease-in;
 }
 
@@ -192,16 +196,15 @@ hr {
 
 #see_less {
     display: none;
+    letter-spacing: 0.5px;
 }
 
 #see_more:hover,
 #see_less:hover {
     cursor: pointer;
-    opacity: 1;
     box-shadow: 1px 1px 10px rgb(119, 119, 119);
 }
 
 #copy_right {
-    font-style: oblique;
     align-self: center;
 }
