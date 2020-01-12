@@ -374,10 +374,9 @@ hr {
 
 #motto_banner {
     height: 50vh;
-
-    transition: 20s ease-in;
-    animation: slide 20s infinite ease-in;
-    /* background-image: url("../img/maxresdefault.jpg"); */
+    transition: 4s ease-in;
+    animation: slide 4s infinite ease-in;
+    background-image: url("../img/maxresdefault.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -408,10 +407,14 @@ hr {
 
 @keyframes slide {
     0% {
-        background-image: url("../img/maxresdefault.jpg");
+        background-size: 100%;
+    }
+
+    50% {
+        background-size: 200%;
     }
 
     100% {
-        background-image: url("../img/Messier_044_2MASS.jpg");
+        background-size: 100%;
     }
 }
