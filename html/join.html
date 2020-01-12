@@ -30,6 +30,7 @@
           <li>
             <a
               href="https://github.com/InfinitLoopDevs/policies/blob/master/citizen_code_of_conduct.md"
+              target="blank"
               >Community Guidelines</a
             >
           </li>
@@ -47,18 +48,57 @@
           and light up the world.</span
         >
       </div>
+      <hr />
       <h2>Become a Star</h2>
       <form action="#">
         <div>
           <p>
-            <input type="text" name="name" id="name" />
-            <input type="text" name="second_name" id="second_name" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter first name"
+            />
+            <input
+              type="text"
+              name="second_name"
+              id="second_name"
+              placeholder="Enter second name"
+            />
           </p>
           <p>
-            <input type="email" name="mail" id="mail_address" />
-            <input type="tel" name="phone" id="phone_number" />
+            <input
+              type="email"
+              name="mail"
+              id="mail_address"
+              placeholder="InfinitLoopDevs@mail.co"
+            />
+            <input
+              type="tel"
+              name="phone"
+              id="phone_number"
+              placeholder="+243490347477"
+            />
           </p>
         </div>
+        <textarea
+          name="reason_to_join"
+          id="join"
+          cols="80"
+          rows="20"
+          placeholder="What makes your interest to join the InfinitLoop Devs Community and how will it impact you"
+        ></textarea>
+        <span>
+          <input type="checkbox" required name="agreement" id="agreement" />I
+          agree on the
+          <a
+            href="https://github.com/InfinitLoopDevs/policies/blob/master/citizen_code_of_conduct.md"
+            target="blank"
+            >Community Guidelines</a
+          >
+        </span>
+        <button type="submit">Join Now</button>
+        <span id="join_botton">Join Now</span>
       </form>
     </section>
     <hr />
