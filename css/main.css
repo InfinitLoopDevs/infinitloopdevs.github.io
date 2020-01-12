@@ -365,3 +365,53 @@ hr {
     border: 1px solid black;
     border-radius: 5px;
 }
+
+/* Join page style */
+
+#join_page {
+    position: relative;
+}
+
+#motto_banner {
+    height: 50vh;
+
+    transition: 20s ease-in;
+    animation: slide 20s infinite ease-in;
+    /* background-image: url("../img/maxresdefault.jpg"); */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#motto {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1.5px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.267);
+    text-shadow: 0.5px 0.5px 2px white, 0.5px 0.5px 3px orange;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#motto span {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url("../img/maxresdefault.jpg");
+    }
+
+    100% {
+        background-image: url("../img/Messier_044_2MASS.jpg");
+    }
+}
