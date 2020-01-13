@@ -112,6 +112,7 @@ nav li:hover {
     border: 1px solid black;
     padding: 5px 28px 5px 28px;
     border-radius: 5px;
+    cursor: default;
     box-shadow: 1px 1px 10px rgb(119, 119, 119);
 }
 
@@ -170,22 +171,82 @@ h4 {
     margin-left: 10px;
 }
 
-#info i {
+#info i,
+.cards i {
     margin-right: 5px;
 }
 
-#info,
-#date div,
-#location div,
-#sponsors div {
+#info {
     display: flex;
     justify-content: space-around;
     /* margin-bottom: 20px; */
 }
 
-#date div,
-#location div,
-#sponsors div {
+.cards,
+.details {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.date div,
+.location div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#info p,
+.sponsors p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cards p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.cards p {
+    display: flex;
+    padding: 5px 0px 5px 0px;
+    margin: 3px 0 3px 0;
+    padding: 0;
+}
+
+.event_title {
+    padding-bottom: 30px;
+}
+
+/* .sponsors h4 {
+    margin: 5px;
+} */
+
+#info p a,
+.cards a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease-in;
+}
+
+#info p a:hover,
+.cards a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+/* #sponsors div {
+    display: flex;
+    justify-content: baseline;
+} */
+
+/* #microsoft {
+    display: flex;
+    align-content: center;
+    align-items: center;
+} */
+
+.date div,
+.location div {
     align-items: center;
 }
 
@@ -216,15 +277,35 @@ h4 {
     position: relative;
     font-size: 15px;
     z-index: 1;
-    width: 25%;
-    min-width: 20%;
+    box-sizing: border-box;
+    width: 24%;
+    min-width: 250px;
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     /* box-shadow: 1px 1px 5px black; */
-    border: 1px solid rgba(0, 0, 0, 0.089);
-    min-height: 60vh;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* box-shadow: 1px 1px 3px black; */
+    min-height: 400px;
     /* max-height: 70vh; */
     transition: 0.5s ease-in;
+}
+
+.cards .sponsors h4 {
+    margin: 10px 0 0 0;
+    padding: 0px;
+}
+
+.cards .location p,
+.cards .date p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cards .location div,
+.cards .date div {
+    margin-top: 5px;
 }
 
 .cards h3 {
@@ -240,6 +321,7 @@ h4 {
 
 .cards .event_banner {
     margin: 0;
+    margin-bottom: 10px;
     padding: 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -257,12 +339,33 @@ h4 {
     background-position: center;
 }
 
+#card2 .event_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    background-color: rgb(165, 165, 165);
+    cursor: default;
+}
+
+#card3 .event_banner {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/images.png");
+}
+
+#card4 .event_banner {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/20191224_2_40004107_50642044.jpg");
+}
+
 #card1 .event_banner {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .event_details {
-    padding-left: 5px;
+    padding-left: 15px;
     padding-right: 5px;
 }
 
@@ -283,11 +386,10 @@ h4 {
     transition: 0.5s ease-in;
 }
 
-/* .event_register {
-    /* position: absolute;
-bottom: 10px;
-left: 5px;
-} */
+.event_register {
+    position: absolute;
+    bottom: 10px;
+}
 
 /*
 #nearest_event_banner {
@@ -301,6 +403,10 @@ left: 440px; */
     margin-top: 20px;
 }
 
+#past_event_title {
+    display: none;
+}
+
 .event_register:hover,
 #nearest_event_learn_more:hover {
     cursor: pointer;
@@ -311,6 +417,7 @@ left: 440px; */
 
 #event_card_section {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #letter_section {
