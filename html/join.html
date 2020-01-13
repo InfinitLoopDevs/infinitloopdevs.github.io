@@ -37,6 +37,12 @@
         </ul>
       </nav>
     </header>
+    <!-- <div id="loading_banner">
+      <div id="progress_bar"></div>
+      <div class="logo">
+        <span class="left">Infinit</span><span class="right">Loop</span>
+      </div>
+    </div> -->
     <section id="join_page">
       <div id="motto_banner"></div>
       <div id="motto">
@@ -55,12 +61,14 @@
           <p>
             <input
               type="text"
+              required
               name="name"
               id="name"
               placeholder="Enter first name"
             />
             <input
               type="text"
+              required
               name="second_name"
               id="second_name"
               placeholder="Enter second name"
@@ -69,12 +77,14 @@
           <p>
             <input
               type="email"
+              required
               name="mail"
               id="mail_address"
               placeholder="InfinitLoopDevs@mail.co"
             />
             <input
               type="tel"
+              required
               name="phone"
               id="phone_number"
               placeholder="+243490347477"
@@ -83,11 +93,16 @@
         </div>
         <textarea
           name="reason_to_join"
+          required
           id="join"
           cols="80"
           rows="20"
           placeholder="What makes your interest to join the InfinitLoop Devs Community and how will it impact you"
         ></textarea>
+        <span>
+          <input type="checkbox" name="agreement" id="agreement" />Wants to
+          recieve mails with out news paper
+        </span>
         <span>
           <input type="checkbox" required name="agreement" id="agreement" />I
           agree on the
