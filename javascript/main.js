@@ -23,6 +23,7 @@
 // });
 
 $(document).ready(function() {
+  $("loading_banner").hide();
   $(".read-more-show").click(function(e) {
     e.preventDefault();
     $(".read-more-content").slideDown();
