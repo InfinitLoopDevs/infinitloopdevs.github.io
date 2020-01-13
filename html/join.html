@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Cedric Murairi Mthabisi Ndlovu" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>InfinitLoop Devs</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html"
+          ><span class="left">Infinit</span><span class="right">Loop</span></a
+        >
+        <br />
+        <span id="bottom">Developer Program</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="events.html">Events</a></li>
+          <span>|</span>
+          <li id="current"><a href="#">Join</a></li>
+          <span>|</span>
+          <li>
+            <a
+              href="https://github.com/InfinitLoopDevs/policies/blob/master/citizen_code_of_conduct.md"
+              target="blank"
+              >Community Guidelines</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section id="join_page">
+      <div id="motto_banner"></div>
+      <div id="motto">
+        InfinitLoop Devs is a constallation of talented people who are working
+        hard to make the world a better place for everyone using the power of
+        imagination and technical skills.<br />
+        <span
+          >Our mission is to make everyone a start, you too can become a star
+          and light up the world.</span
+        >
+      </div>
+      <hr />
+      <h2>Become a Star</h2>
+      <form action="#">
+        <div>
+          <p>
+            <input
+              type="text"
+              required
+              name="name"
+              id="name"
+              placeholder="Enter first name"
+            />
+            <input
+              type="text"
+              required
+              name="second_name"
+              id="second_name"
+              placeholder="Enter second name"
+            />
+          </p>
+          <p>
+            <input
+              type="email"
+              required
+              name="mail"
+              id="mail_address"
+              placeholder="example@email.co"
+            />
+            <input
+              type="tel"
+              required
+              name="phone"
+              id="phone_number"
+              placeholder="+243490347477"
+            />
+          </p>
+        </div>
+        <textarea
+          name="reason_to_join"
+          required
+          id="join"
+          cols="80"
+          rows="20"
+          placeholder="What makes your interest to join the InfinitLoop Devs Community and how will it impact you"
+        ></textarea>
+        <span>
+          <input type="checkbox" name="agreement" id="subscribe" />
+          I would like to subscribe to the InfinitLoop Devs mailing list
+        </span>
+        <span>
+          <input type="checkbox" required name="agreement" id="agreement" />
+          I have read and I agree to the InfinitLoop Devs 
+          <a
+            href="https://github.com/InfinitLoopDevs/policies/blob/master/citizen_code_of_conduct.md"
+            target="_blank"
+            >community guidelines</a>.
+        </span>
+        <button type="submit">Join Now</button>
+        <span id="join_botton">Join Now</span>
+      </form>
+    </section>
+    <hr />
+    <footer>
+      <div id="copy_right">
+        Copyright &copy; 2020 InfinitLoop Devs
+      </div>
+      <div class="logo">
+        <a href="../index.html">InfinitLoop Devs</a>
+      </div>
+    </footer>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+    <script src="../javascript/main.js"></script>
+  </body>
+</html>
