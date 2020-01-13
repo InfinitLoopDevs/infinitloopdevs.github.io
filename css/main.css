@@ -182,7 +182,8 @@ h4 {
     /* margin-bottom: 20px; */
 }
 
-.cards .details {
+.cards,
+.details {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -284,15 +285,27 @@ h4 {
     margin-top: 5px;
     margin-bottom: 5px;
     /* box-shadow: 1px 1px 5px black; */
-    border: 1px solid rgba(0, 0, 0, 0.089);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* box-shadow: 1px 1px 3px black; */
     min-height: 400px;
     /* max-height: 70vh; */
     transition: 0.5s ease-in;
 }
 
-#card1 .sponsors h4 {
-    margin: 0;
-    padding: 0;
+.cards .sponsors h4 {
+    margin: 10px 0 0 0;
+    padding: 0px;
+}
+
+.cards .location p,
+.cards .date p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cards .location div,
+.cards .date div {
+    margin-top: 5px;
 }
 
 .cards h3 {
@@ -326,12 +339,33 @@ h4 {
     background-position: center;
 }
 
+#card2 .event_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    background-color: rgb(165, 165, 165);
+    cursor: default;
+}
+
+#card3 .event_banner {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/images.png");
+}
+
+#card4 .event_banner {
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/20191224_2_40004107_50642044.jpg");
+}
+
 #card1 .event_banner {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .event_details {
-    padding-left: 5px;
+    padding-left: 15px;
     padding-right: 5px;
 }
 
@@ -367,6 +401,10 @@ h4 {
 bottom: 10px;
 left: 440px; */
     margin-top: 20px;
+}
+
+#past_event_title {
+    display: none;
 }
 
 .event_register:hover,
