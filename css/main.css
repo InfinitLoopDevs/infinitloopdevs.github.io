@@ -176,16 +176,41 @@ h4 {
 
 #info,
 #date div,
-#location div,
-#sponsors div {
+#location div {
     display: flex;
     justify-content: space-around;
     /* margin-bottom: 20px; */
 }
 
+#info p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#info p a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease-in;
+}
+
+#info p a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+/* #sponsors div {
+    display: flex;
+    justify-content: baseline;
+} */
+
+/* #microsoft {
+    display: flex;
+    align-content: center;
+    align-items: center;
+} */
+
 #date div,
-#location div,
-#sponsors div {
+#location div {
     align-items: center;
 }
 
