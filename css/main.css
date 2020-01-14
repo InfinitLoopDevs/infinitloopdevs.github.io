@@ -120,6 +120,24 @@ nav li:hover {
     display: flex;
 }
 
+.p-head {
+    color: #1074e7;
+    font-weight: bolder;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#signature {
+    font-weight: bolder;
+}
+
+blockquote,
+#reference {
+    font-style: italic;
+}
+
+
+
 /* section, the default height is 100vh; with overflow hidden, when it is not hidden the height is auto */
 section,
 #nearest_event {
