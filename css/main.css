@@ -104,6 +104,10 @@ nav li:hover {
     border-radius: 5px;
 }
 
+#menu {
+    display: none;
+}
+
 #banner span {
     font-size: 60px;
     font-weight: bolder;
@@ -119,6 +123,24 @@ nav li:hover {
 #main_section {
     display: flex;
 }
+
+.p-head {
+    color: #1074e7;
+    font-weight: bolder;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#signature {
+    font-weight: bolder;
+}
+
+blockquote,
+#reference {
+    font-style: italic;
+}
+
+
 
 /* section, the default height is 100vh; with overflow hidden, when it is not hidden the height is auto */
 section,
@@ -147,6 +169,7 @@ h4 {
 #nearest_event_banner {
     background-color: azure;
     padding: 10px 0 10px 0;
+    box-sizing: border-box;
 }
 
 #nearest_event {
@@ -336,6 +359,7 @@ h4 {
     background-image: url("../img/unnamed.jpg");
     background-size: cover;
     background-size: 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -627,5 +651,111 @@ form span {
 
     100% {
         background-size: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .cards {
+        width: 100%;
+    }
+
+    #nearest_event {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #nearest_event_tag {
+        height: 50%;
+        width: 100%;
+    }
+
+    #info {
+        flex-direction: column;
+    }
+
+    #info p,
+    .sponsors p {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul span {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #background_banner {
+        display: none;
+        transition: 0.5s ease-in;
+    }
+
+    #menu {
+        transform: scale(1.5);
+        padding: 0;
+        margin-top: 5px;
+        align-self: flex-end;
+        border: 1px solid rgb(161, 161, 161);
+        display: inline-block;
+        transition: 0.5s ease-in;
+    }
+
+    #close_menu {
+        display: none;
+        align-self: flex-end;
+        border: 1px solid rgb(161, 161, 161);
+        transition: 0.5s ease-in;
+    }
+
+    nav li {
+        text-decoration: none;
+        color: black;
+        /* margin-bottom: 3px; */
+    }
+
+    footer .logo {
+        font-size: 13px;
+        flex: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+    #copy_right {
+        flex: 1.5;
+        font-size: 11px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    #motto {
+        font-size: 15px;
+    }
+
+    #motto span {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        margin-bottom: 5px;
+    }
+
+    form span {
+        font-size: 13px;
+    }
+
+    section h1 {
+        font-size: 20px;
     }
 }

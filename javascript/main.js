@@ -23,7 +23,18 @@
 // });
 
 $(document).ready(function() {
-  $("loading_banner").hide();
+  $("#menu").click(function(e) {
+    e.preventDefault();
+    $("#menu").hide();
+    $("nav ul").show();
+    $("#close_menu").show();
+  });
+  $("#close_menu").click(function(e) {
+    e.preventDefault();
+    $("#close_menu").hide();
+    $("nav ul").hide();
+    $("#menu").show();
+  });
   $(".read-more-show").click(function(e) {
     e.preventDefault();
     $(".read-more-content").slideDown();
@@ -36,5 +47,9 @@ $(document).ready(function() {
     $("#see_more").show();
     e.preventDefault();
     $(".read-more-content").slideUp();
+  });
+  $("#join_button").click(function submit(e) {
+    e.preventDefault();
+    $("form").submit();
   });
 });
