@@ -703,7 +703,7 @@ form span {
         padding: 0;
         margin-top: 5px;
         align-self: flex-end;
-        border: 1px solid black;
+        border: 1px solid rgb(161, 161, 161);
         display: inline-block;
         transition: 0.5s ease-in;
     }
@@ -711,7 +711,7 @@ form span {
     #close_menu {
         display: none;
         align-self: flex-end;
-        border: 1px solid black;
+        border: 1px solid rgb(161, 161, 161);
         transition: 0.5s ease-in;
     }
 
@@ -733,4 +733,29 @@ form span {
         font-size: 11px;
     }
 
+    textarea {
+        width: 100%;
+    }
+
+    #motto {
+        font-size: 15px;
+    }
+
+    #motto span {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        margin-bottom: 5px;
+    }
+
+    form span {
+        font-size: 13px;
+    }
+
+    section h1 {
+        font-size: 20px;
+    }
 }

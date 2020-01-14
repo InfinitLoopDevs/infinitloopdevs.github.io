@@ -48,4 +48,8 @@ $(document).ready(function() {
     e.preventDefault();
     $(".read-more-content").slideUp();
   });
+  $("#join_button").click(function submit(e) {
+    e.preventDefault();
+    $("form").submit();
+  });
 });
