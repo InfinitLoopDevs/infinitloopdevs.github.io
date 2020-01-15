@@ -104,8 +104,10 @@ nav li:hover {
     border-radius: 5px;
 }
 
+#close_menu,
 #menu {
     display: none;
+    animation: fade 3s ease-in-out infinite;
 }
 
 #banner span {
@@ -591,6 +593,7 @@ input[type="tel"] {
 }
 
 textarea {
+    width: 70%;
     outline: none;
     padding: 10px;
     border: 1px solid rgb(199, 199, 199);
@@ -640,23 +643,48 @@ form span {
     display: block;
 }
 
-@keyframes slide {
+@keyframes fade {
     0% {
-        background-size: 100%;
+        opacity: 1;
     }
 
     50% {
-        background-size: 200%;
+        opacity: 0;
     }
 
     100% {
-        background-size: 100%;
+        opacity: 1;
     }
 }
 
-@media screen and (max-width:400px) {
+@media (max-width:700px) {
+    #event_card_section {
+        flex-direction: row;
+        overflow: scroll;
+        flex-wrap: nowrap;
+    }
+
+    #info {
+        justify-content: space-between;
+    }
+
+    #info p,
+    .sponsors p {
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: -1px;
+    }
+
+    #info i {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width:900px) {
     .cards {
-        width: 100%;
+        width: 48%;
+        box-sizing: border-box;
     }
 
     #nearest_event {
@@ -664,8 +692,133 @@ form span {
         height: auto;
     }
 
-    #nearest_event_tag {
-        height: 50%;
+    #nearest_event_tg {
+        background-image: url("../img/unnamed.jpg");
+        width: 100%;
+    }
+
+    /* #info {
+        flex-direction: column;
+    } */
+
+    /* #info p,
+    .sponsors p {
+        font-size: 15px;
+        font-weight: bold;
+    } */
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul span {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #background_banner {
+        display: none;
+        transition: 0.5s ease-in;
+    }
+
+    #menu {
+        transform: scale(2);
+        padding: 0;
+        cursor: pointer;
+        margin-top: 5px;
+        align-self: flex-end;
+        /* border: 1px solid rgb(161, 161, 161); */
+        display: inline-block;
+        transition: 0.5s ease-in;
+    }
+
+    #close_menu {
+        display: none;
+        cursor: pointer;
+        align-self: flex-end;
+        /* border: 1px solid rgb(161, 161, 161); */
+        transition: 0.5s ease-in;
+    }
+
+    nav li {
+        text-decoration: none;
+        color: black;
+        /* margin-bottom: 3px; */
+    }
+
+    /* footer .logo {
+    font-size: 13px;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+} */
+
+    /* #copy_right {
+        flex: 1.5;
+        font-size: 11px;
+    } */
+
+    textarea {
+        width: 80%;
+    }
+
+    /* #motto {
+        font-size: 15px;
+    }
+
+    #motto span {
+        font-size: 20px;
+    } */
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        margin-bottom: 5px;
+    }
+
+    /* form span {
+        font-size: 13px;
+    }
+
+    section h1 {
+        font-size: 20px;
+    } */
+}
+
+@media (max-width:400px) {
+    #event_card_section {
+        flex-direction: row;
+        overflow: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    #nearest_event h4 {
+        padding: 0;
+        margin: 0;
+    }
+
+    #nearest_event p {
+        letter-spacing: 1px;
+        padding: 0;
+        margin: 6px 0 6px 0;
+    }
+
+    #nearest_event {
+        /* flex-direction: column; */
+        height: auto;
+    }
+
+    #nearest_event_tg {
+        background-image: url("../img/unnamed.jpg");
         width: 100%;
     }
 
@@ -699,11 +852,11 @@ form span {
     }
 
     #menu {
-        transform: scale(1.5);
+        transform: scale(2);
         padding: 0;
         margin-top: 5px;
         align-self: flex-end;
-        border: 1px solid rgb(161, 161, 161);
+        /* border: 1px solid rgb(161, 161, 161); */
         display: inline-block;
         transition: 0.5s ease-in;
     }
@@ -711,7 +864,7 @@ form span {
     #close_menu {
         display: none;
         align-self: flex-end;
-        border: 1px solid rgb(161, 161, 161);
+        /* border: 1px solid rgb(161, 161, 161); */
         transition: 0.5s ease-in;
     }
 
