@@ -186,7 +186,7 @@ h4 {
 
 #nearest_event_tg {
     flex: 1;
-    margin-right: 10px;
+    margin-right: 40px;
     border-radius: 10px;
     opacity: 0.9;
 }
@@ -358,7 +358,7 @@ h4 {
 
 #card1 .event_banner,
 #nearest_event_tg {
-    background-image: url("../img/unnamed.jpg");
+    background-image: url("../img/mlh.png");
     background-size: cover;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -388,6 +388,8 @@ h4 {
 
 #card1 .event_banner {
     opacity: 0.8;
+    background-size: 80%;
+
 }
 
 .event_details {
@@ -403,7 +405,7 @@ h4 {
 #nearest_event_learn_more {
     display: block;
     width: fit-content;
-    padding: 5px;
+    padding: 8px 5px 8px 5px;
     font-weight: bold;
     color: rgb(0, 0, 87);
     border: 1px solid rgba(0, 0, 255, 0.274);
@@ -436,7 +438,7 @@ left: 440px; */
 .event_register:hover,
 #nearest_event_learn_more:hover {
     cursor: pointer;
-    background-color: rgb(0, 0, 87);
+    background-color: #1074e7;
     color: white;
     box-shadow: 1px 1px 10px rgb(0, 0, 87);
 }
@@ -693,7 +695,6 @@ form span {
     }
 
     #nearest_event_tg {
-        background-image: url("../img/unnamed.jpg");
         width: 100%;
     }
 
